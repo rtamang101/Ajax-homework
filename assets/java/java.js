@@ -33,7 +33,7 @@ $('#addAnimal').on('click', function(){
 
 $('#buttonGoesHere').on('click', '.btn', function(){
 	var gif = $(this).attr('data-name');
-	var queryURL = "http://api.giphy.com/v1/gifs/search?q="+gif+"&api_key=dc6zaTOxFJmzC&limit=20";
+	var queryURL = "https://api.giphy.com/v1/gifs/search?q="+gif+"&api_key=dc6zaTOxFJmzC&limit=20";
 	$('#gifGoesHere').empty();
 	$.ajax({url: queryURL, method: 'GET'})
 	.done(function(response){
